@@ -16,7 +16,7 @@ def num_in_list(count):
         return "Error"
         
     for i in range(count):
-        num = round(uniform(1, 10), 2)
+        num = round(uniform(1, count), 2)
         arr.append(num)
     print(arr)
     min = 1
