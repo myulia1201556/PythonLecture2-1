@@ -21,14 +21,14 @@ def num_in_list(count):
     print(arr)
     min = 1
     max = 0
-    dif = 0
+    diff = 0
     for i in range(count):
         if (arr[i] % 1) < min:
             min = round((arr[i] % 1), 2)
-        if (arr[i] % 1) > max:
+        elif (arr[i] % 1) > max:
             max = round((arr[i] % 1), 2)
-    dif = round(max - min, 2)
-    print(f'Min:', min, 'Max:', max, 'Difference:', dif)
+    diff = round(max - min, 2)
+    print(f'Min:', min, 'Max:', max, 'Difference:', diff)
 
 print('Введите чиcло: ')
 num_in_list(int(input()))
